@@ -11,7 +11,7 @@ let player
 let platforms
 let coins
 let scoreText
-localStorage.setItem('character','santa') //change this to test different characters(!!!!) options: santa,knight
+localStorage.setItem('character','knight') //change this to test different characters(!!!!) options: santa,knight
 if( (localStorage.getItem("character")) == null ){localStorage.setItem('character','knight')}
 let character = localStorage.getItem("character")
 let maxScore= parseInt(localStorage.getItem("maxScore"))
@@ -468,7 +468,7 @@ const config = {
         default: 'arcade',
         arcade: {
             gravity: { y: 1200 },
-            debug: true
+            debug: false
         }
     },
     scene: [WelcomeScreen, Game, GameOver, Shop, ShopCutscene,Upgrades]
